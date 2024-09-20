@@ -33,9 +33,11 @@ table {
     padding: 15px 0px;
     border-bottom: 1px solid lightgrey;
   }
-  .input[type="checkbox"] {
-   
+  .shCart{
+    margin: 0 auto;
+    width: 70%;
   }
+  
   h2{
     display: flex;
     justify-content: center;
@@ -43,6 +45,7 @@ table {
     margin: 0 auto;
     margin-top: 150px;
     margin-bottom: 100px;
+   
     
   }
   
@@ -204,7 +207,7 @@ table {
     text-align: center;
     justify-content: center;
     display: flex;
-    gap: 12px;
+    gap: 40px;
     margin-top: 15px;
   }
   .cart__Clac__btn button {
@@ -214,10 +217,10 @@ table {
     background-color: #f0f0f0; 
     font-size: 15px;
     cursor: pointer;
+    color: white;
+    
   
   }
-  
-  
   
   
 /*  */

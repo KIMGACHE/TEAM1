@@ -14,9 +14,8 @@ ul {
 }
 
 .layout {
-    width: 83.333vw;
+    width: 81.25vw;
     margin: 0 auto;
-
 }
 
 .top-header {
@@ -228,7 +227,15 @@ body {
     object-fit: fill;
 }
 
+.week {
+    margin-top: 50px;
+}
 
+.week>p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 50px;
+}
 
 .imageline {
     display: flex;
@@ -236,7 +243,38 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 100px;
+    padding: 50px;
+    border-top: 2px solid gray;
+    margin-top: 20px;
+}
+
+.imageline>.item {
+    width: 374px;
+    height: 414px;
+    margin: 10px;
+}
+.imageline>.item>div:nth-child(1) {
+    display:flex;
+    justify-content: center;
+}
+.imageline>.item>div:nth-child(1)>a {}
+.imageline>.item>div:nth-child(1)>a>img {
+    width: 281px;
+    height: 311px;
+}
+.imageline>.item>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    margin-top: 15px;
+}
+.imageline>.item>div:nth-child(2)>.item-title {
+    font-size: .8rem;
+    font-weight: 700;
+}
+.imageline>.item>div:nth-child(2)>.item-price {
+    font-size: .8rem;
+    font-weight: 700;
 }
 
 .imageline>span>a>img {
@@ -277,4 +315,11 @@ body {
 /* 사이드바 버튼 숨기기  */
 .mideaquery-btn {
     display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+          font-size:1.5rem;
+          color:black;
+          font-weight: 100;
 }

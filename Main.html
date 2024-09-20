@@ -42,6 +42,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- css -->
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/mideaquery.css" />
@@ -274,7 +275,7 @@
                 <!-- <a href="">
                                 <img class="right-icon" src="./image/icon_search.png" alt="찾기">
                             </a> -->
-                <form class="search-form" action="." method="post">
+                <form class="search-form" action="" method="post">
                   <input
                     class="search-txt"
                     type="text"
@@ -428,37 +429,78 @@
             <div class="swiper-slide"><img src="./image/banner.png" alt=""></div>
             <div class="swiper-slide"><img src="./image/banner2.webp" alt=""></div>
             <div class="swiper-slide"><img src="./image/banner3.webp" alt=""></div>
-            ...
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
         <div class="layout">
+          <div class="week">
+            <p>Weekly Best Item</p>
+          </div>
           <div class="imageline">
-            <span
-              ><a href="./Specify.html"
-                ><img src="./image/main1.png" alt="" /></a
-            ></span>
-            <span
-              ><a href="./Specify.html"
-                ><img src="./image/main2.png" alt="" /></a
-            ></span>
-            <span
-              ><a href="./Specify.html"
-                ><img src="./image/main3.png" alt="" /></a
-            ></span>
-            <span
-              ><a href="./Specify.html"
-                ><img src="./image/main4.png" alt="" /></a
-            ></span>
-            <span
-              ><a href="./Specify.html"
-                ><img src="./image/main5.png" alt="" /></a
-            ></span>
-            <span
-              ><a href="./Specify.html"
-                ><img src="./image/main6.png" alt="" /></a
-            ></span>
+
+            <div class="item">
+              <div>
+                  <a><img src="./image/main1.png" alt=""></a>
+              </div>
+              <div>
+               <span class="item-title">유 레스 와이드 벌룬 데님 팬츠</span>
+               <span class="item-price">42,000원</span> 
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                  <a><img src="./image/main2.png" alt=""></a>
+              </div>
+              <div>
+              <span class="item-title">유 언더커버 실켓 라운드 반팔니트</span>
+              <span class="item-price">34,000원</span>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                  <a><img src="./image/main3.png" alt=""></a>
+              </div>
+              <div>
+              <span class="item-title">유 러너 보쉬 반팔 남방</span>
+              <span class="item-price">46,000원</span>  
+              </div>
+            </div>
+            
+            <div class="item">
+              <div>
+                  <a><img src="./image/main4.png" alt=""></a>
+              </div>
+              <div>
+              <span class="item-title">유 메인 스퀘어 패치자수 티셔츠</span>
+              <span class="item-price">29,900원</span>  
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                  <a><img src="./image/main5.png" alt=""></a>
+              </div>
+              <div>
+              <span class="item-title">유 클래식 런던 사철백</span>
+              <span class="item-price">46,900원</span>  
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <a><img src="./image/main6.png" alt=""></a>
+              </div>
+              <div>
+                <span class="item-title">캐쥬얼 소가죽 벨트</span>
+                <span class="item-price">26,000원</span>  
+              </div>
+            </div>
+
           </div>
         </div>
       </main>
@@ -522,6 +564,10 @@
             clickable: 'true',
             type: 'bullets',
         },
+        navigation: {
+                nextEl:'.swiper-button-next',
+                prevEl:'.swiper-button-prev',
+            },
         effect: 'scroll'
       })
     </script>
